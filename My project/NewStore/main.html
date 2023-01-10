@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&family=Ubuntu&display=swap"
+			rel="stylesheet"
+		/>
+		<title>26.12.2022</title>
+	</head>
+	<body>
+		<div class="background-img"></div>
+		<div class="background-sneakers">
+			<div class="sneakers__container">
+				<div class="sneaker__item grid-sn-1">
+					<img src="img/brand-product/prada.png" width="80px" alt="" />
+				</div>
+				<div class="sneaker__item grid-sn-2">
+					<img src="img/brand-product/asics.png" width="60px" alt="" />
+				</div>
+				<div class="sneaker__item grid-sn-3">
+					<img src="img/brand-product/balenciaga.png" width="120px" alt="" />
+				</div>
+				<div class="sneaker__item grid-sn-4">
+					<img src="img/brand-product/balmain.png" width="100px" alt="" />
+				</div>
+				<div class="sneaker__item grid-sn-5">
+					<img src="img/brand-product/new-balance.png" width="50px" alt="" />
+				</div>
+				<div class="sneaker__item grid-sn-6">
+					<img src="img/brand-product/nike.png" width="50px" alt="" />
+				</div>
+				<div class="sneaker__item grid-sn-7">
+					<img src="img/brand-product/adidas.png" width="50px" alt="" />
+				</div>
+				<div class="sneaker__item grid-sn-8">
+					<img src="img/brand-product/salomon.png" width="50px" alt="" />
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<section class="section-btns">
+				<div class="btn-background grid-btn-1">
+					<button class="btn-click section" data-section-id="shoes">
+						Shoes
+					</button>
+				</div>
+
+				<div class="btn-background grid-btn-2">
+					<button
+						class="btn-click btn-click-2 section"
+						data-shoes-count="0"
+						data-section-id="cart"
+					>
+						Cart
+					</button>
+				</div>
+			</section>
+		</div>
+
+		<!-- Shoes -->
+
+		<!-- <section data-active-btn-content="true" class="product__contain">
+			<div class="product__item">
+				<img
+					class="product__img"
+					src="img/product/balenciaga-img.jpg"
+					width="600px"
+					alt=""
+				/>
+				<h5 class="product__price">$ 1150</h5>
+				<h4 class="product__name">
+					Runner Sneaker in black
+					<div class="cart__item">
+						<button data-add-in-cart="true" class="cart__btn">Remove</button>
+					</div>
+				</h4>
+			</div>
+
+			<div class="product__item">
+				<img
+					class="product__img"
+					src="img/product/balenciaga-track-colors.jpg"
+					width="600px"
+					alt=""
+				/>
+				<h5 class="product__price">$ 1050</h5>
+				<h4 class="product__name">
+					Track sneaker in silver
+					<div class="cart__item">
+						<button data-add-in-cart="true" class="cart__btn">Remove</button>
+					</div>
+				</h4>
+			</div>
+
+			<div class="product__item">
+				<img
+					class="product__img"
+					src="img/product/balenciaga-defender.jpg"
+					width="600px"
+					alt=""
+				/>
+				<h5 class="product__price">$ 1250</h5>
+				<h4 class="product__name">
+					Defender Sneaker in beige
+					<div class="cart__item">
+						<button data-add-in-cart="true" class="cart__btn">Remove</button>
+					</div>
+				</h4>
+			</div>
+
+			<div class="product__item">
+				<img
+					class="product__img"
+					src="img/product/balenciaga-speed-2.0.jpg"
+					width="600px"
+					alt=""
+				/>
+				<h5 class="product__price">$ 865</h5>
+				<h4 class="product__name">
+					Speed Sneaker in white
+					<div class="cart__item">
+						<button data-add-in-cart="true" class="cart__btn">Remove</button>
+					</div>
+				</h4>
+			</div>
+
+			<div class="product__item">
+				<img
+					class="product__img"
+					src="img/product/balenciaga-x-pander.jpg"
+					width="600px"
+					alt=""
+				/>
+				<h5 class="product__price">$ 1350</h5>
+				<h4 class="product__name">
+					X-pander sneaker in grey
+					<div class="cart__item">
+						<button data-add-in-cart="true" class="cart__btn">Remove</button>
+					</div>
+				</h4>
+			</div>
+
+			<div class="product__item">
+				<img
+					class="product__img"
+					src="img/product/balenciaga-triple-s.jpg"
+					width="600px"
+					alt=""
+				/>
+				<h5 class="product__price">$ 1150</h5>
+				<h4 class="product__name">
+					Balenciaga / Adidas triple s sneaker in black
+					<div class="cart__item">
+						<button data-add-in-cart="true" class="cart__btn">Remove</button>
+					</div>
+				</h4>
+			</div>
+		</section> -->
+
+		<!-- Cart -->
+
+		<!-- <div data-active-btn-content="true" class="cart-items">
+			<div class="cart-item">
+				<img
+					src="img/product/balenciaga-track-colors.jpg"
+					width="400px"
+					alt=""
+				/>
+				<h1 class="cart-item-title">Runner Sneaker in black</h1>
+				<div class="cart-item-count">3</div>
+				<div class="cart-item-price">$ 1150</div>
+				<button class="btn-remove-cart-item">remove</button>
+			</div>
+
+			<div class="cart-item">
+				<img src="img/product/balenciaga-img.jpg" width="400px" alt="" />
+				<div class="cart-item-title">Track sneaker in silver</div>
+				<div class="cart-item-count">2</div>
+				<div class="cart-item-price">$ 1050</div>
+				<button class="btn-remove-cart-item">remove</button>
+			</div>
+
+			<div class="cart-item">
+				<img src="img/product/balenciaga-defender.jpg" width="400px" alt="" />
+				<div class="cart-item-title">Defender Sneaker in beige</div>
+				<div class="cart-item-count">1</div>
+				<div class="cart-item-price">$ 1250</div>
+				<button class="btn-remove-cart-item">remove</button>
+			</div>
+		</div> -->
+
+		<script src="product.js"></script>
+
+		<script src="index.js"></script>
+	</body>
+</html>

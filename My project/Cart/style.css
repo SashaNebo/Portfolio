@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 5px;
+    background: linear-gradient(
+        -45deg,
+        #fee1e9 0%,
+        #edd5e1 50%,
+        #aed0db 100%
+    );
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.separator {
+    margin: 0 5px;
+    font-size: 30px;
+    color: gray;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    border: none;
+    background: transparent;
+    font-family: "Open Sans";
+    color: gray;
+    cursor: pointer;
+}
+
+.cart-tab::after {
+    content: attr(data-goods-count);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    color: white;
+    font-size: 13px;
+    background: #c30e0e;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.tab.active {
+    pointer-events: none;
+    color: #2196f3;
+}
+
+.tab:hover {
+    color: #1771b9;
+}
+
+.product-items {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #ffe8f5;
+    border-radius: 5px;
+    background: #ecedff;
+    font-family: "Open Sans";
+    transition: .3s ease;
+    overflow: hidden;
+    
+}
+
+.product-item img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-list {
+    background: #ecedff;
+    padding: 15px 0;
+}
+
+.product-list h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #550fff;
+    margin: 0 0 10px 0;
+}
+
+.price {
+    color: #cb34c6;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.button {
+    padding: 10px 30px;
+    background: #fb00dc45;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: .3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #9d3995;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 40px;
+}
+
+.cart-item-price {
+    font-weight: bold;
+}
+
+.cart-item-delete {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+}
